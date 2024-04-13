@@ -15,22 +15,57 @@
   </head>
   <body>
     <nav>
+      <!-- --------------------------------------------------------------- -->
+      <!-- NAVBAR STARTS HERE -->
+      <!-- -------------------------------------------------------------------- -->
       <div id="navbar">
-        <div id="nav-primary">
-          <div id="logo"><p>LAZAREV.</p></div>
-          <div id="dropdowns">
-            <div id="caseStudies">Case studies</div>
-            <div id="areasOfExpertise">Areas of expertise</div>
-            <div id="UI-UX-Design">UI UX Design</div>
-            <div id="productDesign">Product design</div>
-            <div id="designProcess">Design process</div>
-            <div id="aboutAgency">About agency</div>
+        <!-- nav-primary has logo , genres and connect-btn -->
+        <div id="logo"><p>LAZAREV.</p></div>
+        <div id="genre-container">
+          <!-- each genre has heading h4 and subheading items h5 -->
+          <div class="genre">
+            <h4>Case studies</h4>
+            <h5>Case Studies</h5>
           </div>
-          <button id="connectButton">
-            Let's Talk &nbsp &nbsp
-            <i id="pencilForConnect" class="fa-solid fa-pencil"></i>
-          </button>
+          <div class="genre">
+            <h4>Areas of expertise</h4>
+            <h5>AI ML</h5>
+            <h5>Fintech</h5>
+            <h5>Real Estate</h5>
+            <h5>E-commerce</h5>
+            <h5>Web3</h5>
+          </div>
+          <div class="genre">
+            <h4>UI UX Design</h4>
+            <h5>UX Audit</h5>
+            <h5>UX Design</h5>
+            <h5>UI Design</h5>
+            <h5>UX Research</h5>
+          </div>
+          <div class="genre">
+            <h4>Product design</h4>
+            <h5>SaaS</h5>
+            <h5>Web App</h5>
+            <h5>Mobile App</h5>
+            <h5>Website Design</h5>
+          </div>
+          <div class="genre">
+            <h4>Design process</h4>
+            <h5>MVP</h5>
+            <h5>Relaunch</h5>
+          </div>
+          <div class="genre">
+            <h4>About agency</h4>
+            <h5>Our Story</h5>
+            <h5>Careers</h5>
+            <h5>Clients' Feedback</h5>
+            <h5>News & Articles</h5>
+          </div>
         </div>
+        <button id="connectButton">
+          Let's Talk &nbsp &nbsp
+          <i id="pencilForConnect" class="fa-solid fa-pencil"></i>
+        </button>
         <div id="nav-bottom"></div>
       </div>
     </nav>
@@ -39,11 +74,11 @@
         <div id="headingDivInsidepage1">
           <h1>
             AI & ML PR
-            <span>
-              <button id="pencil-container">
-                <i class="fa-solid fa-pencil"></i>
-              </button>
-            </span>
+            <!-- <span> -->
+            <div id="pencil-container">
+              <i class="fa-solid fa-pencil"></i>
+            </div>
+            <!-- </span> -->
             DUCT
           </h1>
           <h1>DESIGN AGENCY</h1>
@@ -62,7 +97,12 @@
         </div>
       </div>
     </div>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="app.js"></script>
   </body>
 </html>
