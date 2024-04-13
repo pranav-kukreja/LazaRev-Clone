@@ -15,69 +15,114 @@ body {
 /* NAVBAR Starts Here */
 /* ----------------------------------- */
 #navbar {
+  /* positioning */
   position: fixed;
   top: 0%;
   left: 0%;
-}
-#nav-primary {
+  /* ----------------------------- */
+  /* dimensions */
   width: 100vw;
-  height: 15vh;
+  height: 13vh;
+
+  /* ----------------------------- */
+  /* padding */
   padding-left: 7.5vh;
   padding-right: 7.5vh;
-
+  padding-top: 4vh;
+  /* ----------------------------- */
+  /* color scheme  */
+  /*for final use  */
   background-color: #111111;
+  /* ******TESTING PURPOSES****** */
+
+  /* background-color: grey; */
   color: white;
+
+  /* font properties */
   font-weight: 550;
+  font-size: 2.5vh;
+  /* flexbox */
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
-  /* gap: 10vw; */
-  font-size: 2.5vh;
+  /* background-color: purple; */
 }
 
 #logo {
   font-size: 5vh;
 }
-#dropdowns {
+#genre-container {
+  height: 30vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 2%;
+  align-items: flex-start;
+  gap: 4vh;
   text-transform: uppercase;
-  font-size: 2.05vh;
+  position: relative;
+  top: 26vh;
+  z-index: 10;
+  /* background-color: red; */
 }
-#dropdowns div {
+.genre {
   white-space: nowrap;
 }
+.genre h4 {
+  /* margin-top: 15vh; */
+  margin-bottom: 2.5vh;
+  font-size: 2.2vh;
+  color: white;
 
+  /* ******TESTING PURPOSES****** */
+  /* background-color: red; */
+}
+.genre h5 {
+  margin-bottom: 2vh;
+  font-size: 2.5vh;
+  text-transform: capitalize;
+  opacity: 0;
+  transition: opacity 0.5s;
+  font-weight: 100;
+  /* ******TESTING PURPOSES***** * */
+  /* background-color: red; */
+  /* display: none; */
+}
 #connectButton {
   border: none;
   color: white;
   background-color: #0da34e;
   padding: 1.5vh;
   border-radius: 2.75vh;
-
+  cursor: pointer;
   font-size: 2.75vh;
   text-transform: capitalize;
 }
-/* now let us style the bottom navbar 
-that comes to display on hovering over the primary navbar */
-
 #nav-bottom {
-  background-color: #111111;
+  /* margin-left: 10%;
+  margin-right: 10%; */
   height: 0vh;
-  margin-left: 7.5vh;
-  margin-right: 7.5vh;
-  border-bottom: 0.2vh solid white;
-  transition: height 0.75s;
+  width: 93%;
+  position: absolute;
+  top: 16.5vh;
+  left: 3.5%;
+  z-index: 9;
+  border-bottom: 0.3vh white solid;
+  background-color: #111111;
+
+  transition: height 1s;
+  /* ******TESTING PURPOSES****** */
+  /* background-color: green; */
 }
 
-/* Now we increase height of thw nav bottom whenever hover occurs on the nav-primary */
+/* Now we increase height of the nav bottom whenever hover occurs on the nav-primary */
 #navbar:hover #nav-bottom {
-  height: 20vh;
+  height: 22vh;
 }
-
+#navbar:hover .genre h5 {
+  color: white;
+  opacity: 1;
+}
 /* starting with page 1 */
 /* Heading Div inside Page 1 Div */
 
@@ -86,7 +131,7 @@ that comes to display on hovering over the primary navbar */
   width: 100vw;
   height: 85vh;
   position: relative;
-  top: 15vh;
+  top: 13vh;
   color: white;
   background-color: #111111;
   /* Applying FlexBox */
@@ -107,7 +152,6 @@ that comes to display on hovering over the primary navbar */
 #page1 span {
   height: 5.8vw;
   width: 5.8vw;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,9 +169,6 @@ that comes to display on hovering over the primary navbar */
   font-size: 6vh;
   font-weight: 501;
   color: white;
-}
-
-#pencil-container:hover {
   cursor: pointer;
 }
 
